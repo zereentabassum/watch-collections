@@ -1,7 +1,61 @@
 [
     {
+        "name":"Rolex",
+        "id":"1",
+        "img":"images/rolex.webp",
+        "price":"940"
+    },
+    {
+        "name":"A.Lange & Söhne",
+        "id":"2",
+        "img":"images/silver-golden.webp",
+        "price":"695"
+    },
+    {
+        "name":"Patek Philippe",
+        "id":"3",
+        "img":"images/vacheron-1636411138.jpg",
+        "price":"879"
+    },
+    {
         "name":"",
-        "id":"",
+        "id":"4",
+        "img":"",
+        "price":""
+    },
+    {
+        "name":"",
+        "id":"5",
+        "img":"",
+        "price":""
+    },
+    {
+        "name":"",
+        "id":"6",
+        "img":"",
+        "price":""
+    },
+    {
+        "name":"",
+        "id":"7",
+        "img":"",
+        "price":""
+    },
+    {
+        "name":"",
+        "id":"8",
+        "img":"",
+        "price":""
+    },
+    {
+        "name":"",
+        "id":"9",
+        "img":"",
+        "price":""
+    },
+    {
+        "name":"",
+        "id":"10",
         "img":"",
         "price":""
     }
