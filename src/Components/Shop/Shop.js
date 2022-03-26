@@ -68,7 +68,13 @@ const Shop = () => {
         price: 74
     }
 ]
-console.log(products);
+
+    const [cart, setCart] = useState([]);
+    const handleAddButton = (product) => {
+        const newCart = [...cart, product.name];
+        setCart(newCart)
+        
+    }
 
 
 
@@ -77,13 +83,14 @@ console.log(products);
         <div className='shop-container'>
             <div className='product-container'>
                 {
-                    products.map(product=> <Product key={product.id} product={product}></Product>)
+                    products.map(product=> <Product key={product.id} product={product} handleAddButton={handleAddButton}></Product>)
                 }
        
             </div>
             <div className='selector-container'>
+               
                 {
-                    <Cart></Cart>
+                    <Cart cart={cart}></Cart>
                 }
             </div>
         </div>
