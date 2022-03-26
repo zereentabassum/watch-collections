@@ -1,64 +1,62 @@
 [
     {
         "name":"Rolex",
-        "id":"1",
+        "id": 1,
         "img":"images/rolex.webp",
-        "price":"940"
+        "price": 97
     },
     {
-        "name":"A.Lange & Söhne",
-        "id":"2",
+        "name":"Fossil Casual Quartz",
+        "id": 2,
         "img":"images/silver-golden.webp",
-        "price":"695"
+        "price": 67
     },
     {
-        "name":"Patek Philippe",
-        "id":"3",
+        "name":"Timex Highland Street",
+        "id": 3,
         "img":"images/vacheron-1636411138.jpg",
-        "price":"879"
+        "price": 87
     },
     {
-        "name":"",
-        "id":"4",
-        "img":"",
-        "price":""
+        "name":"Ferrari Quartz",
+        "id": 4,
+        "img":"images/luxury wristwatch.webp",
+        "price": 64
     },
     {
-        "name":"",
-        "id":"5",
-        "img":"",
-        "price":""
+        "name":"Cartier",
+        "id": 5,
+        "img":"images/istockphoto-1180244659-612x612.jpg",
+        "price": 59
     },
     {
-        "name":"",
-        "id":"6",
-        "img":"",
-        "price":""
+        "name":"Timex Weekender",
+        "id": 6,
+        "img":"images/white surface.webp",
+        "price": 55
     },
     {
-        "name":"",
-        "id":"7",
-        "img":"",
-        "price":""
+        "name":"Casio Quarz",
+        "id": 7,
+        "img":"images/61WixzlVuXL.jpg",
+        "price": 86
     },
     {
-        "name":"",
-        "id":"8",
-        "img":"",
-        "price":""
+        "name":"Fossil Chronograph",
+        "id": 8,
+        "img":"images/tissot.jpeg",
+        "price": 72
     },
     {
-        "name":"",
-        "id":"9",
-        "img":"",
-        "price":""
+        "name":"Rolex Daytona",
+        "id": 9,
+        "img":"images/smartwatch-screen-digital-device_53876-96809.webp",
+        "price": 99
     },
     {
-        "name":"",
-        "id":"10",
-        "img":"",
-        "price":""
+        "name":"Fossil Quartz Chronograph",
+        "id": 10,
+        "img":"images/classic-women-silver-watch-black-dial-leather-strap_122647-41 (1).webp",
+        "price": 74
     }
-
-
 ]
