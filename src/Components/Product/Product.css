@@ -16,6 +16,10 @@
     border: none;
     cursor: pointer;
     font-size: 17px;
+    color: rgb(21, 8, 44);
+}
+.add-btn strong{
+    padding-right: 8px;
 }
 .add-btn:hover{
     background-color: rgb(255, 125, 151);
