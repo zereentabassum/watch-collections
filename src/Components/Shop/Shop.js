@@ -7,13 +7,13 @@ const Shop = () => {
 
    const products = [
     {
-        name:"Rolex",
+        name:"Fossil Silver Gold Chronograph",
         id: 1,
-        img:"https://content.rolex.com/dam/2021/upright-bba-with-shadow/m116503-0001.png?impolicy=v6-upright&imwidth=270",
+        img:"https://www.swisswatchcompany.net/images/watches/rolex_ladies_watches/large1/ladies-rolex-79173-2001.jpg",
         price: 97
     },
     {
-        name:"Fossil Casual Quartz",
+        name:"Fossil Casual Silver Quartz",
         id: 2,
         img:"https://fossil.scene7.com/is/image/FossilPartners/ES4784-alt?$sfcc_fos_medium$",
         price: 67
@@ -21,7 +21,7 @@ const Shop = () => {
     {
         name:"Timex Highland Street",
         id: 3,
-        img:"https://content.rolex.com/dam/2021/upright-bba-with-shadow/m126234-0050.png?impolicy=v6-upright&imwidth=270",
+        img:"https://assets.ajio.com/medias/sys_master/root/ajio/catalog/5f0ca91caeb26931758665f4/-473Wx593H-460656358-silver-MODEL.jpg",
         price: 87
     },
     {
@@ -81,7 +81,7 @@ console.log(products);
        
             </div>
             <div className='selector-container'>
-                <h2>Selected Clothes</h2>
+                <h2>Selected Watches</h2>
             </div>
         </div>
     );

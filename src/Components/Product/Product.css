@@ -1,4 +1,22 @@
+.product{
+    background-color: rgb(252, 222, 227);
+    border-radius: 15px;
+    border: 1px rgb(235, 203, 208);
+    
+}
+
 .product img{
     height: 200px;
     width: 170px;
+}
+.add-btn{
+    width: 100%;
+    padding: 4%;
+    background-color: rgb(253, 156, 175);
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+.add-btn:hover{
+    background-color: rgb(255, 125, 151);
 }
