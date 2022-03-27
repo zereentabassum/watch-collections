@@ -3,9 +3,7 @@ import './Cart.css';
 
 const Cart = (props) => {
   const { cart } = props;
-  const {chooseOneButton, randomName, chooseAgain} = props;
-    console.log(cart);
-    console.log(props);
+  const {chooseOneButton, chooseAgain} = props;
    
 
     
@@ -15,6 +13,7 @@ const Cart = (props) => {
     // console.log(a)
       //  }
     
+  
 
     return (
         <div className='cart'>
@@ -26,10 +25,7 @@ const Cart = (props) => {
           )
           
           }
-          {
-            <h3>{cart[randomName]}</h3>
-          }
-          
+         
           
           <button onClick={chooseOneButton}>Choose One For Me</button>
           <br />

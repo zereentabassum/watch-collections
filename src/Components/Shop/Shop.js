@@ -81,9 +81,10 @@ const Shop = () => {
   
     const chooseOneButton = () => {
         const randomName = Math.floor(Math.random()*cart.length);
-        const a =(cart[randomName]);
-       console.log(a);
+        const randomProduct = cart[randomName] 
+        console.log(randomProduct);
         
+    
     }
     
    const chooseAgain = () =>{
