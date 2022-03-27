@@ -14,7 +14,7 @@ const Shop = () => {
         price: 97
     },
     {
-        name:"Fossil Casual Silver Quartz",
+        name:"Fossil Royal Silver Quartz",
         id: 2,
         img:"https://fossil.scene7.com/is/image/FossilPartners/ES4784-alt?$sfcc_fos_medium$",
         price: 67
@@ -71,10 +71,24 @@ const Shop = () => {
 
     const [cart, setCart] = useState([]);
     const handleAddButton = (product) => {
-        const newCart = [...cart, product.name];
-        setCart(newCart)
+        let newCart = [...cart, product.name];
+        setCart(newCart);
+        
+
+
+    }
+
+  
+    const chooseOneButton = () => {
+        const randomName = Math.floor(Math.random()*cart.length);
+        const a =(cart[randomName]);
+       console.log(a);
         
     }
+    
+   const chooseAgain = () =>{
+       setCart([]);
+   }
 
 
 
@@ -87,10 +101,12 @@ const Shop = () => {
                 }
        
             </div>
-            <div className='selector-container'>
+            <div className='cart-container'>
                
                 {
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart} chooseOneButton={chooseOneButton}
+                    chooseAgain={chooseAgain}
+                    ></Cart>
                 }
             </div>
         </div>

@@ -1,8 +1,24 @@
-import React from 'react';
+
 import './Cart.css';
 
-const Cart = ({ cart }) => {
+const Cart = (props) => {
+  const { cart } = props;
+  const {chooseOneButton, randomName, chooseAgain} = props;
     console.log(cart);
+    console.log(props);
+   
+
+    
+    // const chooseOneButton = () => {
+    //   const randomName = Math.floor(Math.random()*cart.length);
+    // const a = cart[randomName]; 
+    // console.log(a)
+      //  }
+   
+     
+      
+    
+    
 
     return (
         <div className='cart'>
@@ -10,12 +26,20 @@ const Cart = ({ cart }) => {
           { 
           cart.map((data, index)=>
           <h3 key={index}>{data}</h3> 
-          )}
-          <button>Choose One For Me</button>
+          
+          )
+          
+          }
+          {
+            <h3>{cart[randomName]}</h3>
+          }
+          
+          
+          <button onClick={chooseOneButton}>Choose One For Me</button>
           <br />
-          <button>Choose Again</button>
+          <button onClick={chooseAgain}>Choose Again</button>
         </div>
-    );
+      );
 };
 
 export default Cart;
