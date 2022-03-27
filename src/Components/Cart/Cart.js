@@ -6,8 +6,11 @@ const Cart = ({ cart }) => {
 
     return (
         <div className='cart'>
-          <h2>Selected Watches</h2>  
-          <h3>{cart}</h3>
+          <h2>Selected Watches</h2> 
+          { 
+          cart.map((data, index)=>
+          <h3 key={index}>{data}</h3> 
+          )}
           <button>Choose One For Me</button>
           <br />
           <button>Choose Again</button>
