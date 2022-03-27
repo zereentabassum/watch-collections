@@ -14,10 +14,6 @@ const Cart = (props) => {
     // const a = cart[randomName]; 
     // console.log(a)
       //  }
-   
-     
-      
-    
     
 
     return (

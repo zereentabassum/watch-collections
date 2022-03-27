@@ -21,3 +21,12 @@
 .cart button:hover{
     background-color: rgb(255, 74, 111);
 }
+
+@media  only screen and (max-width: 668px) {
+    .cart{
+        width: 94%;
+    }
+    .cart button{
+        padding: 4px;
+    }
+}
