@@ -18,6 +18,15 @@
     font-size: 17px;
     cursor: pointer;
 }
+.cart-div{
+    display: flex;
+    padding-left: 10%;
+}
+.cart-div img {
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+}
 .cart button:hover{
     background-color: rgb(255, 74, 111);
 }
@@ -28,5 +37,12 @@
     }
     .cart button{
         padding: 4px;
+    }
+    .cart-div img {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        border-radius: 50%;
+        padding-top: 22px;
     }
 }

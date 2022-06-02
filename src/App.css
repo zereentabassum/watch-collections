@@ -37,3 +37,8 @@
   }
 }
 
+body{
+  background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148817571.jpg?w=2000');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

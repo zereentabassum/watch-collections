@@ -18,14 +18,24 @@ const Cart = (props) => {
     return (
         <div className='cart'>
           <h2>Selected Watches</h2> 
+       
           { 
-          cart.map((data, index)=>
-          <h3 key={index}>{data}</h3> 
+          // cart.map((data, index)=>
+          // <h3 key={index}>{data}</h3> 
           
-          )
+          // )
           
-          }
-         
+            
+            cart.map(cart=> 
+              <div key={cart.id} className='cart-div'>
+                <img src={cart.img} alt="" />
+                <h3>{cart.name}</h3>
+
+              </div>) 
+          
+        
+          
+          } 
           
           <button onClick={chooseOneButton}>Choose One For Me</button>
           <br />

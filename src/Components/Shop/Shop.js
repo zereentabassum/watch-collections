@@ -71,7 +71,7 @@ const Shop = () => {
 
     const [cart, setCart] = useState([]);
     const handleAddButton = (product) => {
-        let newCart = [...cart, product.name];
+        let newCart = [...cart, product];
         setCart(newCart);
         
 
