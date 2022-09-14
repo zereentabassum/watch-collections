@@ -9,6 +9,14 @@
     height: 200px;
     width: 170px;
 }
+.product-info{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.info{
+    color: rgb(95, 94, 94);
+    
+}
 .add-btn{
     width: 100%;
     padding: 4%;
@@ -17,6 +25,7 @@
     cursor: pointer;
     font-size: 17px;
     color: rgb(21, 8, 44);
+   
 }
 .add-btn strong{
     padding-right: 8px;

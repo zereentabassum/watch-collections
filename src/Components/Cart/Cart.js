@@ -1,18 +1,24 @@
 
+import { useState } from 'react';
 import './Cart.css';
 
-const Cart = (props) => {
-  const { cart } = props;
-  const {chooseOneButton, chooseAgain} = props;
-   
+const Cart = ({cart, setCart}) => {
+  const [random, setRandom] = useState({});
 
+  
+    let randomProduct;
+    const chooseOneButton = () => {
+      let randomName = Math.floor(Math.random()*cart.length);
+     randomProduct = cart[randomName]; 
+     setRandom(randomProduct);
+   
     
-    // const chooseOneButton = () => {
-    //   const randomName = Math.floor(Math.random()*cart.length);
-    // const a = cart[randomName]; 
-    // console.log(a)
-      //  }
+       }
     
+      const chooseAgain = () =>{
+        setCart([]);
+        setRandom({})
+    }
   
 
     return (
@@ -20,26 +26,32 @@ const Cart = (props) => {
           <h2>Selected Watches</h2> 
        
           { 
-          // cart.map((data, index)=>
-          // <h3 key={index}>{data}</h3> 
-          
-          // )
-          
+        
             
             cart.map(cart=> 
               <div key={cart.id} className='cart-div'>
                 <img src={cart.img} alt="" />
-                <h3>{cart.name}</h3>
+                <h4>{cart.name}</h4>
 
               </div>) 
           
         
           
-          } 
+          }
+           {
+            
+           }
           
-          <button onClick={chooseOneButton}>Choose One For Me</button>
+          <button onClick={chooseOneButton} disabled={cart.length===0}>Choose One For Me</button>
           <br />
-          <button onClick={chooseAgain}>Choose Again</button>
+         
+            {<div className='cart-div'>
+            <img src={random.img} alt="" />
+            <h4>{random.name}</h4>
+
+          </div>}
+          <button onClick={chooseAgain}>Clear All</button>
+
         </div>
       );
 };

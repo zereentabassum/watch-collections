@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Shop.css'
 import Product from '../Product/Product'
 import Cart from '../Cart/Cart';
@@ -69,6 +69,8 @@ const Shop = () => {
     }
 ]
 
+
+
     const [cart, setCart] = useState([]);
     const handleAddButton = (product) => {
         let newCart = [...cart, product];
@@ -79,17 +81,8 @@ const Shop = () => {
     }
 
   
-    const chooseOneButton = () => {
-        const randomName = Math.floor(Math.random()*cart.length);
-        const randomProduct = cart[randomName] 
-        console.log(randomProduct);
-        
     
-    }
-    
-   const chooseAgain = () =>{
-       setCart([]);
-   }
+ 
 
 
 
@@ -105,8 +98,8 @@ const Shop = () => {
             <div className='cart-container'>
                
                 {
-                    <Cart cart={cart} chooseOneButton={chooseOneButton}
-                    chooseAgain={chooseAgain}
+                    <Cart cart={cart}
+                    setCart={setCart}
                     ></Cart>
                 }
             </div>
